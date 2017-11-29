@@ -26,7 +26,9 @@
 #include <net/if_arp.h>
 #include <sys/socket.h>
 #include <sys/ioctl.h>
+#ifndef __APPLE__
 #include <features.h>
+#endif
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 #include <getopt.h>
